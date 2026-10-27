@@ -12,6 +12,17 @@ Before starting any code or UI task:
 5. Respect existing design, dependencies, behavior and project constraints. Avoid unrelated changes.
 6. Run available tests, formatting and linting. Report any checks not run.
 
+## Workflow selection (before choosing individual skills)
+
+For a substantial multi-stage task, inspect and read **one** primary workflow from the shared library:
+- New landing page, marketing microsite, scroll-driven product page → `workflows/landing-page.md`.
+- Interactive 3D scene, shaders, particles or complex WebGL interaction → `workflows/interactive-3d.md`; when part of a landing page, follow the landing-page workflow and invoke the 3D workflow at its scene stage.
+- Dashboard, Telegram Mini App, backend-enabled site or multi-screen application → `workflows/web-app.md`.
+
+Locate workflow files under `vendor/ai-development-skills/workflows/` when vendored; otherwise fetch from the connected GitHub repository. **A Markdown link alone does not load a workflow.**
+
+Use the workflow's stages and checkpoints in order. Load only the skills called for by the current stage, including relevant rule/reference files. Do not prematurely load all 39 skills, claim unseen files were read, or hold for approval if the user's request already authorizes end-to-end work. Small bug fixes can use only directly relevant skills without a full workflow.
+
 ## Task → skill routing
 
 | Task | Skill directory relative to library's `skills/` |
