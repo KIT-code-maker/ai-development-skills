@@ -28,6 +28,16 @@ Select an end-to-end process **before** individual skills:
 
 The [AGENTS.md template](templates/AGENTS.md) now routes projects to the appropriate workflow and then loads relevant complete upstream skill files at each stage. These workflows and templates are project orchestration instructions; the upstream `skills/` files remain unmodified.
 
+## Business automation landing starter
+
+For the specific business automation landing page concept, use the complete [project kit](templates/business-automation-landing/):
+
+- [Root project `AGENTS.md`](templates/business-automation-landing/AGENTS.md) — Medeo typography, content-driven graphics, skill/workflow selection.
+- [`PROJECT_BRIEF.md`](templates/business-automation-landing/PROJECT_BRIEF.md) — audience, value proposition, sections, calls to action, design constraints.
+- [`MOTION_STORYBOARD.md`](templates/business-automation-landing/MOTION_STORYBOARD.md) — scroll choreography for databases, integrations, workflows, AI and analytics.
+
+Copy all three files into the new project's root (with the two supporting documents under `docs/` as instructed). This kit is opt-in and does not impose Medeo on unrelated applications.
+
 ## Use in other repositories
 
 Copy [`templates/AGENTS.md`](templates/AGENTS.md) into your project's root as `AGENTS.md`.

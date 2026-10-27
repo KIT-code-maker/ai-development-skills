@@ -23,6 +23,15 @@ Locate workflow files under `vendor/ai-development-skills/workflows/` when vendo
 
 Use the workflow's stages and checkpoints in order. Load only the skills called for by the current stage, including relevant rule/reference files. Do not prematurely load all 39 skills, claim unseen files were read, or hold for approval if the user's request already authorizes end-to-end work. Small bug fixes can use only directly relevant skills without a full workflow.
 
+## Business automation landing specialization
+
+If the project is a landing page for business automation services, use the specialized project kit:
+- `templates/business-automation-landing/AGENTS.md` — copy this to the **project root** as `AGENTS.md` (it includes skill routing, project-specific instructions and font usage).
+- `templates/business-automation-landing/PROJECT_BRIEF.md` — positioning, section narratives and constraints.
+- `templates/business-automation-landing/MOTION_STORYBOARD.md` — concrete scroll-linked interactive scenes.
+
+These design preferences (including the Medeo type system) are specific to this landing concept; **do not apply them to unrelated projects by default**. In an existing project, use the specialized template instead of blindly appending conflicting root instructions. Keep sources accessible with a pinned submodule or supported GitHub file access.
+
 ## Task → skill routing
 
 | Task | Skill directory relative to library's `skills/` |

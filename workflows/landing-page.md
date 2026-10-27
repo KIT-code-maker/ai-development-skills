@@ -27,6 +27,23 @@ Define art direction, typography, spacing system, visual hierarchy, color use, i
 Output: section-by-section visual specification and content hierarchy.
 Gate: direction is coherent, CTA accessible, layout accommodates mobile.
 
+## Content-driven storytelling (project-specific when brief requests it)
+
+For product or business-automation landing pages, use **semantic motion**: animations should illustrate what the current section explains, not serve as unrelated visual spectacle. Map each section to a system diagram or interaction and specify: meaning → displayed entities → state transitions → user or scroll trigger → accessible static fallback.
+
+Example storyboards:
+- Database/infrastructure: request flows from client → API gateway → backend → database, followed by query result/response; distinguish requests and responses.
+- Integrations: two business systems exchange synchronized events, acknowledgements and updated states.
+- Automation: trigger → conditional routing → task execution → successful result, with readable state changes.
+- Analytics: input events aggregate into meaningful metrics and dashboard feedback. Never present simulated metrics as real live business data.
+- AI-assisted processes: user input → validation → model/service processing → human checkpoint where appropriate → result, without inventing guarantees.
+
+Start with an accessible static diagram with labels, then animate states on scroll using GSAP only when beneficial. Scroll controls animation **progress**, not logical accuracy. Prefer transforms/opacity, avoid jank and over-pinning; keep meaningful content visible without JavaScript and under `prefers-reduced-motion`. On touch / small screens, simplify nodes and timelines rather than compressing unreadable diagrams. Do not simulate real production data transfer or functional API calls unless a real backend is implemented and disclosed.
+
+### Project font requirements
+
+When the project's brief requests the Medeo family, use its actual licensed font assets in normal styles for readable body and informational copy; use an available verified pixelated/digital variant only as a selective technical accent (API, DB, FLOW, SYNC, labels, code-like diagrams). **Do not invent a Medeo Pixel font file or synthesize a font name.** If that exact variant is unavailable, ask for font assets where necessary or use a clearly identified licensed pixel-style fallback until supplied. Check Cyrillic glyph coverage, font licensing, preload strategy, FOIT/FOUT and mobile readability.
+
 ## Stage 2 — Implementation architecture
 For React/Next.js, read `skills/react-best-practices/SKILL.md` and relevant `rules/` entries; otherwise follow the current project's stack.
 Plan components, semantic HTML, assets, lazy loading, interaction state and reduced-motion paths.
@@ -35,7 +52,7 @@ Gate: all core content and CTAs usable without animation.
 
 ## Stage 3 — Motion storyboard
 Read `skills/animations/SKILL.md` plus relevant rules in `skills/animations/rules/`.
-Specify for each animated section: trigger, timeline, start/end scroll positions, scrub/pin behavior, easing, transform properties, layering, fallback and mobile behavior. Prioritize hierarchy and clarity over spectacle.
+Specify for each animated section: narrative meaning, data-flow accuracy, trigger, timeline, start/end scroll positions, scrub/pin behavior, easing, transform properties, layering, fallback and mobile behavior. Prioritize hierarchy and clarity over spectacle.
 Output: motion table / storyboard.
 Gate: no animation obscures CTAs or traps keyboard / scroll users.
 
