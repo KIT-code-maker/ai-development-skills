@@ -11,12 +11,20 @@ This is a **project-specific** agent instruction file for a premium landing page
 
 ## Skills sequence
 - Art direction → `frontend-design/`
+- Anti-template polish / audit → `design-excellence/`
+- Semantic palette, color system and verified contrast → `color-system/` with relevant `references/`
 - React implementation (only if project uses React) → `react-best-practices/` with relevant `rules/`
 - Motion storyboard → `animations/` and relevant `rules/`
 - Scroll scenes → `gsap-core/`, `gsap-timeline/`, `gsap-scrolltrigger/`, and `gsap-react/` if React
 - Performance → `gsap-performance/` and framework performance references
 - Optional actual real-time 3D → relevant `threejs-*/` and `workflows/interactive-3d.md`
 - Audit → `web-design-guidelines/`, `requesting-code-review/` (including `code-reviewer.md`)
+
+## Existing design / sketches and color refresh
+
+If the landing already exists in the project, **do not rebuild it from scratch**. Read its components, style tokens, assets and animation code; keep approved copy, section order, CTAs, real functionality and existing design decisions unless the task requires revisions. Use `design-excellence/` and `color-system/` to audit the current palette, spacing, hierarchy and generic AI-looking patterns. Suggest a coherent palette and implement it via semantic CSS tokens rather than uncontrolled global replacements. Check the effect of the changes at multiple screen sizes and preserve GSAP interactions.
+
+Project-specific branding wins if a generic Skill conflicts: **Medeo is the intended font**, not the generic system stack proposed by other guidance. Don't force white backgrounds, blue accents or strict single-accent rules merely because an external Skill presents them as defaults. Contrasting technical indicators may use separate functional status colors.
 
 ## Typography: Medeo
 - Use genuine **Medeo** assets in their provided licensed weights/styles, not invented filenames or invented weights.

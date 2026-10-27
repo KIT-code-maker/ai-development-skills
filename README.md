@@ -10,6 +10,8 @@ Complete upstream Agent Skills copied verbatim, with their referenced supporting
 - `skills/requesting-code-review/` — https://github.com/obra/superpowers/tree/main/skills/requesting-code-review
 - `skills/python-pro/` — https://github.com/Jeffallan/claude-skills/tree/main/skills/python-pro
 - `skills/fastapi-expert/` — https://github.com/Jeffallan/claude-skills/tree/main/skills/fastapi-expert
+- `skills/design-excellence/` — https://github.com/majiayu000/claude-skill-registry-data/blob/a21980a5b576646393ed574f158d7dd92fae4c3f/data/design-excellence/SKILL.md (archived source snapshot; original content preserved)
+- `skills/color-system/` — https://github.com/AntJanus/skillbox/tree/main/skills/color-system
 - `skills/animations/` — https://github.com/mthines/agent-skills/tree/main/skills/design/animations
 - `skills/gsap-*/` — https://github.com/greensock/gsap-skills/tree/main/skills
 - `skills/threejs-*/` — https://github.com/cesartevisual/threejs-skills/tree/main/skills
@@ -17,6 +19,10 @@ Complete upstream Agent Skills copied verbatim, with their referenced supporting
 Additional mirrored source: `upstream/web-interface-guidelines/` from https://github.com/vercel-labs/web-interface-guidelines — the Vercel UI audit skill fetches these rules dynamically.
 
 The upstream skill files are not modified. Consult each source's license terms; available additional licenses are saved in `upstream/licenses/`. Revisit licensing before redistributing.
+
+## Visual identity and existing drafts
+
+The landing workflow now includes a `Stage 1b` using complete `design-excellence` and `color-system` Skills. New projects get a deliberate palette and semantic tokens; existing designs receive a code/design audit and **incremental enhancement**, preserving user-authored content, architecture and working behavior. Generic defaults from third-party Skills do not override project-specific brand requirements such as Medeo.
 
 ## Workflows
 

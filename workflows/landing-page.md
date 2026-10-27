@@ -21,11 +21,30 @@ Use when asked to build or redesign a landing page, marketing page, promotional 
 Inspect existing repo, routes, framework, scripts, content assets, typography, design system, analytics / SEO needs. Establish audience, CTA and narrative, target devices, content and performance constraints.
 Output: one-page brief, proposed tier, section outline, technical assumptions and open risks.
 
+## Existing landing page: update instead of restart
+
+If the project already has sketches, Figma exports, markup, components or a partial implementation, preserve that work:
+1. Inventory existing sections, code, assets, font files, palette variables, animation triggers and CTA behavior.
+2. Identify which parts already satisfy the brief, the main visual weaknesses, and the smallest safe improvements.
+3. Define a migration plan (token changes, component touchpoints, responsive checks) before editing.
+4. Preserve routes, content, data and working interactions. Do not regenerate the whole landing page just to apply a palette. Avoid deleting uncommitted changes.
+5. Apply style/tokens incrementally and verify desktop/mobile behavior, layout and existing motion.
+6. If visual inspection is unavailable, clearly state that the review is code-based and avoid claiming a visual match.
+
 ## Stage 1 — Visual direction
 Read `skills/frontend-design/SKILL.md`.
 Define art direction, typography, spacing system, visual hierarchy, color use, image strategy, section-specific layout. Avoid generic template aesthetics and preserve brand constraints.
 Output: section-by-section visual specification and content hierarchy.
 Gate: direction is coherent, CTA accessible, layout accommodates mobile.
+
+### Stage 1b — Anti-template visual audit and color system (before UI build)
+
+Read `skills/design-excellence/SKILL.md` and `skills/color-system/SKILL.md`, with `skills/color-system/references/palettes.md`, `contrast.md`, `theory.md` or `build-your-own.md` as actually needed. Review design-excellence anti-patterns critically: its proposed default fonts, white background and one-accent rules are not mandatory when the project brief demands a distinct brand direction.
+
+For a new landing, create 2–3 clearly differentiated color directions with background, surface, primary/secondary text, interactive, border, and status tokens; choose one based on brand/personality, content density and accessible contrast. Prefer clear neutral foundations, restrained accents, strong hierarchy and meaningful graphic emphasis, rather than automatic purple glow, arbitrary gradients, identical SaaS cards or gratuitous glassmorphism. For an existing landing, map current hexes to semantic tokens and **propose minimal adjustments** rather than recoloring everything.
+
+Output: palette rationale, token table, light/dark strategy when relevant, contrast checks and what existing visuals will be retained. Use Realtime Colors or a similar tool for a preview only if the tool is actually available; do not claim a live preview without one.
+Gate: text and controls retain sufficient contrast, accents are coherent, and required brand fonts are respected.
 
 ## Content-driven storytelling (project-specific when brief requests it)
 

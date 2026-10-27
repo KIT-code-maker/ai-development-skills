@@ -32,10 +32,18 @@ If the project is a landing page for business automation services, use the speci
 
 These design preferences (including the Medeo type system) are specific to this landing concept; **do not apply them to unrelated projects by default**. In an existing project, use the specialized template instead of blindly appending conflicting root instructions. Keep sources accessible with a pinned submodule or supported GitHub file access.
 
+## Existing project / redesign policy
+
+If files, components, mockups, styles, content or animations already exist, begin with an **inventory and audit** rather than starting from a blank page. Identify what works, the existing font/color tokens, existing GSAP/React infrastructure, uncommitted work (if visible), dependencies and behavior to preserve. Reuse and improve the existing implementation unless an explicit rebuild was requested. Present a concise improvement plan, then apply incremental changes. Do not overwrite user-created work, remove content, replace project architecture, or change public APIs without necessity. Run available checks and explain what changed.
+
+For visual identity and palette choices, read `skills/design-excellence/SKILL.md` and `skills/color-system/SKILL.md`, plus the relevant `skills/color-system/references/` documents. Their suggested defaults are advisory: project brand, actual licensed fonts (e.g. Medeo), accessibility and existing design constraints take precedence over generic color or typography prescriptions.
+
 ## Task → skill routing
 
 | Task | Skill directory relative to library's `skills/` |
 |---|---|
+| Anti-generic visual quality and design audit | `design-excellence/` |
+| Semantic palette, color tokens, contrast and color harmony | `color-system/` and relevant `references/` |
 | Design new page or improve visual composition | `frontend-design/` |
 | Accessibility, usability, interface audit | `web-design-guidelines/` |
 | React and Next.js performance, architecture | `react-best-practices/` |
