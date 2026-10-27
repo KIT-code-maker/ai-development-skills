@@ -18,6 +18,16 @@ Additional mirrored source: `upstream/web-interface-guidelines/` from https://gi
 
 The upstream skill files are not modified. Consult each source's license terms; available additional licenses are saved in `upstream/licenses/`. Revisit licensing before redistributing.
 
+## Workflows
+
+Select an end-to-end process **before** individual skills:
+
+- [Landing Page](workflows/landing-page.md): standard, scroll-motion, or immersive 3D landing pages.
+- [Interactive 3D](workflows/interactive-3d.md): 3D scenes, shaders, particles and scroll-linked camera moves.
+- [Web App](workflows/web-app.md): full-stack applications, dashboards and Telegram Mini Apps.
+
+The [AGENTS.md template](templates/AGENTS.md) now routes projects to the appropriate workflow and then loads relevant complete upstream skill files at each stage. These workflows and templates are project orchestration instructions; the upstream `skills/` files remain unmodified.
+
 ## Use in other repositories
 
 Copy [`templates/AGENTS.md`](templates/AGENTS.md) into your project's root as `AGENTS.md`.
