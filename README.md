@@ -4,6 +4,7 @@ Complete upstream Agent Skills copied verbatim, with their referenced supporting
 
 ## Sources
 
+- `skills/customer-research/`, `skills/offers/`, `skills/copywriting/`, `skills/copy-editing/` — https://github.com/coreyhaines31/marketingskills/tree/main/skills (full original directories including references and evals)
 - `skills/frontend-design/` — https://github.com/anthropics/skills/tree/main/skills/frontend-design
 - `skills/web-design-guidelines/` — https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines
 - `skills/react-best-practices/` — https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices
@@ -28,6 +29,7 @@ The landing workflow now includes a `Stage 1b` using complete `design-excellence
 
 Select an end-to-end process **before** individual skills:
 
+- [Content Strategy](workflows/content-strategy.md): customer research → offers → copywriting → copy editing → content/visual map. This precedes visual production when copy isn't approved.
 - [Landing Page](workflows/landing-page.md): standard, scroll-motion, or immersive 3D landing pages.
 - [Interactive 3D](workflows/interactive-3d.md): 3D scenes, shaders, particles and scroll-linked camera moves.
 - [Web App](workflows/web-app.md): full-stack applications, dashboards and Telegram Mini Apps.

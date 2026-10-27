@@ -15,6 +15,7 @@ Before starting any code or UI task:
 ## Workflow selection (before choosing individual skills)
 
 For a substantial multi-stage task, inspect and read **one** primary workflow from the shared library:
+- Copy, positioning, offers, audience research, headlines, website content → `workflows/content-strategy.md`. Complete and approve content before visual work when requested.
 - New landing page, marketing microsite, scroll-driven product page → `workflows/landing-page.md`.
 - Interactive 3D scene, shaders, particles or complex WebGL interaction → `workflows/interactive-3d.md`; when part of a landing page, follow the landing-page workflow and invoke the 3D workflow at its scene stage.
 - Dashboard, Telegram Mini App, backend-enabled site or multi-screen application → `workflows/web-app.md`.
@@ -42,6 +43,10 @@ For visual identity and palette choices, read `skills/design-excellence/SKILL.md
 
 | Task | Skill directory relative to library's `skills/` |
 |---|---|
+| Customer research and evidence-backed audience hypotheses | `customer-research/` |
+| Positioning, offer definition and value proposition | `offers/` |
+| Landing page headlines, section copy and CTAs | `copywriting/` |
+| Copy quality, clarity and AI-cliché removal | `copy-editing/` |
 | Anti-generic visual quality and design audit | `design-excellence/` |
 | Semantic palette, color tokens, contrast and color harmony | `color-system/` and relevant `references/` |
 | Design new page or improve visual composition | `frontend-design/` |

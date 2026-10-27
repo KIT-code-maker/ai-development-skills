@@ -5,6 +5,10 @@ Purpose: create a polished, responsive landing page with an intentional visual n
 ## Invocation
 Use when asked to build or redesign a landing page, marketing page, promotional microsite, or scroll-based product story. Read the project's root `AGENTS.md` first. The library lives at `vendor/ai-development-skills/` if vendored; otherwise retrieve the applicable files from the linked GitHub repository. Workflows are orchestration instructions, not replacements for the original skills. Read each full `SKILL.md` and any relevant linked support files **at its stage**; do not load all skills into context at once.
 
+## Content prerequisite — before visual design
+
+Inspect existing approved copy and `docs/CONTENT_STRATEGY.md`, `docs/WEBSITE_COPY.md`, `docs/CONTENT_VISUAL_MAP.md` when present. If content is missing, positioning is unresolved, or the user requests writing first, execute `workflows/content-strategy.md` with `customer-research/`, `offers/`, `copywriting/`, and `copy-editing/` before Stage 1. Preserve existing approved copy and diagrams. When the user asks to approve content before visual work, present the copy and wait for that approval; do **not** start a visual rebuild. If the user already authorized end-to-end implementation, proceed with clearly labeled provisional assumptions and complete a content-review gate before motion. Animated metaphors must follow the final copy, not determine it.
+
 ## Choose a complexity tier
 - **Standard**: static layout + CSS transitions / subtle entrance effects; avoid GSAP/Three.js unless already required. 
 - **Motion** (default when scroll animation is specifically requested): animation choreography with GSAP Timeline / ScrollTrigger / React integration if React is present.

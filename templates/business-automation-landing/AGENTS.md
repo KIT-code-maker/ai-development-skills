@@ -3,11 +3,15 @@
 This is a **project-specific** agent instruction file for a premium landing page offering business process automation, integrations, data infrastructure, AI-assisted workflows and custom internal tools. In the target project place this file at the **root** as `AGENTS.md`. Keep `docs/PROJECT_BRIEF.md` and `docs/MOTION_STORYBOARD.md` adjacent under `docs/`.
 
 ## Authoritative project documents
-1. Read `docs/PROJECT_BRIEF.md` first for positioning, customer claims and page scope.
+1. Read `docs/PROJECT_BRIEF.md` first for positioning, customer claims and page scope. If available, also read `docs/CONTENT_STRATEGY.md`, `docs/WEBSITE_COPY.md` and `docs/CONTENT_VISUAL_MAP.md`; these approved texts guide visual work.
 2. Read `docs/MOTION_STORYBOARD.md` for visual explanations tied to scroll progression.
 3. Inspect existing repository structure and actual font assets before writing code.
 4. Load `workflows/landing-page.md` from https://github.com/KIT-code-maker/ai-development-skills (vendored: `vendor/ai-development-skills/workflows/landing-page.md`). Choose the **Motion** tier by default, escalating to Immersive 3D only when explicitly justified.
 5. At each workflow stage load only the corresponding full upstream `SKILL.md` and its relevant reference files from `vendor/ai-development-skills/skills/` or from the connected GitHub repository. A URL does not by itself mean the content has been read.
+
+## Content-first workflow
+
+For writing or revising marketing content, first read `vendor/ai-development-skills/workflows/content-strategy.md` (or fetch the full workflow from connected GitHub). Apply `customer-research/` → `offers/` → `copywriting/` → `copy-editing/`, including relevant reference files. Preserve approved headings and existing diagram copy. Do not modify the visual layout when only copy is requested. Where the user asks to approve text first, stop after a complete copy draft and handoff; only then proceed to `landing-page.md`.
 
 ## Skills sequence
 - Art direction → `frontend-design/`
