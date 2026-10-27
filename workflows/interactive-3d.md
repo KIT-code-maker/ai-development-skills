@@ -1,0 +1,12 @@
+# Interactive 3D Workflow
+
+Use for web experiences requiring real-time 3D, scroll-linked camera moves, interactive scenes, particle systems, or custom shader effects. If used for a landing page, execute as Stage 4 of `workflows/landing-page.md`. This workflow does not require every Three.js skill.
+
+1. **Scope and feasibility** — Inspect existing rendering stack (Three.js, React Three Fiber, WebGPU), assets / licenses and device targets. Establish interaction model, desired frame budget, fallback visual and why real-time 3D is necessary. Read `skills/threejs-web/SKILL.md` and `skills/threejs-scene/SKILL.md`. For React Three Fiber read `skills/threejs-r3f/SKILL.md`.
+2. **Scene baseline** — Read `skills/threejs-geometry/SKILL.md`, `skills/threejs-materials/SKILL.md`, `skills/threejs-lighting/SKILL.md`, and `skills/threejs-assets/SKILL.md` only as applicable. Build an accessible, responsive static scene first with proper lifecycle and disposal.
+3. **Effects by requirement** — Read only needed `skills/threejs-shaders/SKILL.md`, `skills/threejs-particles/SKILL.md`, `skills/threejs-postprocessing/SKILL.md`, `skills/threejs-interaction/SKILL.md`, `skills/threejs-animation/SKILL.md`, or `skills/threejs-webgpu/SKILL.md`. Do not add particles, shaders, physics or postprocessing merely because skills exist. Keep content functional if WebGL is disabled.
+4. **Scroll choreography (optional)** — Read `skills/animations/SKILL.md`, `skills/gsap-core/SKILL.md`, `skills/gsap-scrolltrigger/SKILL.md`, `skills/gsap-timeline/SKILL.md`, and `skills/gsap-react/SKILL.md` when applicable. Connect scroll progress to controlled scene parameters rather than uncontrolled independent animation loops. Handle viewport and asset-load changes, cleanup and reduced motion.
+5. **Optimize and validate** — Read `skills/threejs-performance/SKILL.md` and, if needed, `skills/threejs-debugging/SKILL.md`. Audit geometry, textures, draw calls, materials, pixel ratio and cleanup. Use fallback content and accessible controls; verify mobile/touch/keyboard and reduced motion. Measure performance if tools are available; never fabricate FPS or Lighthouse scores.
+6. **Review and delivery** — Read `skills/requesting-code-review/SKILL.md` with `code-reviewer.md`. Run available checks; summarize what was actually verified, missing assets or unsupported devices.
+
+Stages are sequential and each ends with a working deliverable. If a tool or asset is unavailable, report the limitation and offer an achievable fallback without pretending to have tested it.
